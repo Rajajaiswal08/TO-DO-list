@@ -43,9 +43,14 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col items-center py-10 px-4">
+      {/* Message Section */}
+      <div className="w-full max-w-3xl bg-blue-100 text-blue-800 p-4 mb-4 rounded-lg shadow text-center">
+        <p className="font-bold">Welcome to the Task Management App! Add, organize, and track your tasks efficiently.</p>
+      </div>
+
       <h1 className="text-3xl font-bold text-gray-800 mb-8 text-center">Task Management</h1>
 
-      <div className="flex flex-col md:flex-row items-center gap-4 w-full max-w-3xl mb-6">
+      <div className=" flex-col md:flex-row items-center gap-4 w-full max-w-3xl mb-6">
         <div className="flex w-full gap-2">
           <input
             type="text"
@@ -60,7 +65,8 @@ function App() {
           >
             + Add Task
           </button>
-        </div>
+        </div><br />
+        <br />
 
         <div className="flex flex-wrap gap-2 justify-center mt-4 md:mt-0">
           {categories.map((category) => (
